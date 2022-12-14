@@ -1,12 +1,14 @@
 const DOMSelectors = {
   submitForm: document.querySelector("#form"),
   text: document.querySelector("#text"),
+  URL: document.querySelector("link"),
   box: document.getElementById("song"),
   Album: document.getElementById("title"),
   artist: document.querySelector("#artist"),
   GetRid: document.getElementById("Remove"),
   input: document.querySelector("text"),
   displaySection: document.getElementById("display"),
+  removebtn:document.querySelectorAll(".remove-btn")
 };
 
 // /* function clearfields() {
@@ -22,10 +24,6 @@ DOMSelectors.submitForm.addEventListener("submit", function (event) {
   let URL = DOMSelectors.URL.value;
 
   DOMSelectors.displaySection.insertAdjacentHTML(
-    "beforeend"`<h2 class="display-singer">${artist}</h2>
-      <h3 class="display-album">${Album}</h3>
-      <img class="display-img" src="${URL}" />
-      <button class="remove-btn">Remove Album</button>`
-  );
-  clearfields();
-});
+  removebtn.forEach((btn) => {
+    btn.addEventListener("click", function (event) {
+      event.target.parentElement.remove()
