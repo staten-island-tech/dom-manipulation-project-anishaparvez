@@ -8,7 +8,7 @@ const DOMSelectors = {
   GetRid: document.getElementById("Remove"),
   input: document.querySelector("text"),
   displaySection: document.getElementById("display"),
-  removebtn:document.querySelectorAll(".remove-btn")
+  removebtn: document.querySelectorAll(".remove-btn"),
 };
 
 // /* function clearfields() {
@@ -22,8 +22,15 @@ DOMSelectors.submitForm.addEventListener("submit", function (event) {
   let Album = DOMSelectors.Album.value;
   let artist = DOMSelectors.artist.value;
   let URL = DOMSelectors.URL.value;
-
-  DOMSelectors.displaySection.insertAdjacentHTML(
-  removebtn.forEach((btn) => {
-    btn.addEventListener("click", function (event) {
-      event.target.parentElement.remove()
+});
+let removebtn = document.querySelectorAll(".remove-btn");
+const removeButton = document.querySelector(".remove");
+  removeButton.addEventListener("click", (Album)) => {
+    if (Album.target.tagName === "BUTTON")} {
+      const button = Album.target;
+      const card = button.parentNode;
+      const display = card.parentNode;
+      if (button.textContent === "Remove Album") {
+        display.removeChild(card);
+      }
+    }
