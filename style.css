@@ -1,8 +1,82 @@
+<<<<<<< HEAD
 body {
   background-color: rgb(209, 193, 205);
   text-align: center;
   justify-content: center;
   font-size: large;
+=======
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.title {
+  font-size: 10rem;
+}
+.artist-input {
+  background-color: lightblue;
+  padding: 10%;
+  font-size: 8rem;
+  text-align: center;
+  align-items: center;
+}
+
+.text-box {
+  padding: 0.75rem;
+  font-size: 3rem;
+}
+
+.btn {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.display-album {
+  margin: auto;
+  font-size: 4.5rem;
+  padding: 8px 0px 8px 0px;
+}
+
+.display-artist {
+  margin: auto;
+  font-size: 4rem;
+  padding: 8px 0px 8px 0px;
+}
+
+.display-img {
+  margin: auto;
+  padding: 10px 15px 10px 15px;
+  width: 40rem;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem auto 2rem auto;
+  width: 90vw;
+}
+
+.display-card {
+  background-color: rgb(255, 182, 222);
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: 3rem auto 3rem auto;
+  border-radius: 1rem;
+}
+
+.remove-btn {
+  font-size: 3rem;
+  margin: 17px auto 17px auto;
+  padding: 0.75rem;
+>>>>>>> 0540605e80384f39b4716186a45a43b50391186c
 }
 
 .albums,
